@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--primaryFont);
+
+}
+
+@font-face {
+  font-family: eurostile;
+  src: url(../src/assets/eurostile.TTF);
+}
+
+:root {
+  --primaryFont: eurostile, sans-serif;
+  --textColor: #b97ebb;
+  line-height: 1.5;
+  /* color: #141c3a */
+  --Bluecolor: #130F49;
+  --Blackcolor: #1A1818;
+}

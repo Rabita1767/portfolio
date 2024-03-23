@@ -1,0 +1,13 @@
+.o-banner-right {
+
+    padding-right: 3rem;
+    flex-basis: 30%;
+
+    &__image {
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 0 30px #b97ebb;
+    }
+}

@@ -1,0 +1,54 @@
+@font-face {
+    font-family: yustineSignature;
+    src: url(../../assets//YustineSignature.ttf);
+}
+
+
+.o-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3.5rem;
+    position: absolute;
+    width: -webkit-fill-available;
+
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    &__left {
+        font-family: yustineSignature;
+        font-size: 4rem;
+        color: #b97ebb;
+
+    }
+
+    &__right--btn {
+        border: 5px solid #b97ebb;
+        border-radius: 30px;
+        width: 150px;
+        font-family: var(--primaryFont);
+        font-size: 1.2rem;
+        font-weight: 700;
+        background-color: #fff;
+        color: #b97ebb;
+        padding: 0.6em 1.2em;
+        cursor: pointer;
+    }
+
+    &__right--btn:hover {
+        background-color: #b97ebb;
+        color: #fff;
+    }
+}
+
+.svg-inline--fa {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.svg-inline--fa:hover {
+    color: #b97ebb
+}

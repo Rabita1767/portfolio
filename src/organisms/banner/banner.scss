@@ -1,0 +1,55 @@
+.o-banner {
+    position: relative;
+    display: flex;
+    height: 100vh;
+
+    &__left {
+        flex-basis: 50%;
+        // background-color: #ece7e1;
+        // background-color: var(--textColor);
+        // opacity: 0.4;
+        background-image: radial-gradient(at 40% 40%, rgb(30, 144, 255) 0px, transparent 50%), radial-gradient(at 90% 10%, rgb(255, 105, 180) 0px, transparent 50%), radial-gradient(at 50% 95%, rgb(0, 255, 255) 0px, transparent 50%), radial-gradient(at 20% 30%, rgb(50, 205, 50) 0px, transparent 50%), radial-gradient(at 90% 90%, rgb(255, 255, 0) 0px, transparent 50%), radial-gradient(at 33% 50%, rgb(255, 69, 0) 0px, transparent 50%), radial-gradient(at 79% 53%, rgb(128, 0, 128) 0px, transparent 50%);
+        opacity: 0.3;
+        filter: blur(100px) saturate(100%);
+    }
+
+    &__right {
+        flex-basis: 50%;
+
+    }
+
+    &__text--div {
+        position: absolute;
+        bottom: -1rem;
+        left: 3%;
+    }
+
+    &__text {
+        font-size: 12rem;
+        font-weight: 600;
+        opacity: 0.08;
+    }
+
+    &__icon {
+        position: absolute;
+        bottom: 8%;
+        right: 15%;
+        display: flex;
+        gap: 3rem;
+        color: var(--textColor);
+    }
+
+}
+
+.o-menu {
+    display: flex;
+
+}
+
+.o-banner-hidden {
+    opacity: 0;
+}
+
+.o-menu-hidden {
+    opacity: 0;
+}
