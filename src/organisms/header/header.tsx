@@ -15,7 +15,7 @@ const Header: FC<IProps> = ({ onMenuClick }) => {
                 <p>rabita</p>
             </div>
             <div className="o-header__right">
-                <Button children="Say Hello" className="o-header__right--btn" />
+                <Button children="Say Hello" className="o-header__right--btn" type="submit" />
 
                 <FontAwesomeIcon icon={faBars} onClick={onMenuClick} />
 
