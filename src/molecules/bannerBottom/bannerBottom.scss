@@ -1,3 +1,5 @@
+@import "../../mixin";
+
 .o-banner-bottom {
     position: absolute;
     top: 20%;
@@ -36,5 +38,49 @@
         height: 300px;
         border-radius: 50%;
         object-fit: cover;
+
+    }
+
+    &__text--div {
+        position: absolute;
+        bottom: -1rem;
+        left: 3%;
+    }
+
+    &__icon {
+
+        display: flex;
+        color: var(--textColor);
+        justify-content: space-around;
+
+    }
+
+    &__container {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        margin: 0 2rem;
+
+        @include breakpoint("md") {
+            grid-template-columns: 1fr;
+            row-gap: 3rem;
+        }
+
+    }
+
+    &__container--image {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__text {
+        font-size: 10rem;
+        font-weight: 600;
+        opacity: 0.08;
+
+        @include breakpoint("md") {
+            display: none;
+        }
     }
 }

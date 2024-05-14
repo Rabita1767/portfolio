@@ -1,0 +1,60 @@
+@import "../../mixin";
+
+.o-experience {
+    margin-top: 5rem;
+
+    @include breakpoint("md") {
+        margin-top: 25rem;
+    }
+
+
+    &__heading {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 600;
+        color: var(--textColor);
+    }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+
+        @include breakpoint("md") {
+            margin: 0 2rem;
+        }
+    }
+
+    &__container--left {
+        flex-basis: 25%;
+
+        @include breakpoint("md") {
+            flex-basis: 40%;
+        }
+    }
+
+    &__container--right {
+        padding-top: 6%;
+    }
+
+    &__container--right--sm {
+        background-color: var(--textColor);
+        padding: 30px 320px 50px 40px;
+        border-radius: 8px;
+        color: #fff;
+
+        @include breakpoint("md") {
+            padding: 30px 125px 50px 40px;
+        }
+    }
+
+    &__container--right--sm--heading {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    &__container--right--sm--content {
+        font-size: 18px;
+        font-size: 400;
+    }
+}

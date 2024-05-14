@@ -1,12 +1,13 @@
 import { FC, ReactNode } from "react";
 import "./text.scss";
 interface IProps {
-    className: string,
-    children: ReactNode
+    className?: string,
+    children: ReactNode,
+    onClick?: () => void;
 }
-const Text: FC<IProps> = ({ className, children }) => {
+const Text: FC<IProps> = ({ className, children, onClick }) => {
     return (
-        <p className={className}>
+        <p className={className} onClick={onClick}>
             {children}
         </p>
     );

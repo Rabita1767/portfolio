@@ -1,8 +1,14 @@
+@import "../../mixin";
+
 .o-banner {
     position: relative;
     display: flex;
-    // height: 100vh;
-    height: 813px;
+    // height: 813px;
+    height: 400px;
+
+    @include breakpoint("md") {
+        padding-bottom: 15rem;
+    }
 
     &__left {
         flex-basis: 50%;
@@ -19,38 +25,49 @@
 
     }
 
-    &__text--div {
-        position: absolute;
-        bottom: -1rem;
-        left: 3%;
-    }
-
-    &__text {
-        font-size: 12rem;
-        font-weight: 600;
-        opacity: 0.08;
-    }
-
-    &__icon {
-        position: absolute;
-        bottom: 8%;
-        right: 15%;
+    &__cross {
         display: flex;
-        gap: 3rem;
-        color: var(--textColor);
+        justify-content: flex-end;
+    }
+
+    &__nav {
+        padding-top: 15px;
+        padding-left: 45px;
+        color: #fff;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        cursor: pointer;
     }
 
 }
 
 .o-menu {
     display: flex;
+    flex-direction: column;
+    background-color: var(--textColor);
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    border-radius: 8px;
 
-}
+    .svg-inline--fa {
+        font-size: 2.5rem;
+        cursor: pointer;
+        color: #fff;
+        padding-top: 20px;
+        padding-right: 30px;
+    }
 
-.o-banner-hidden {
-    opacity: 0;
+    .svg-inline--fa:hover {
+        color: black;
+    }
+
 }
 
 .o-menu-hidden {
-    opacity: 0;
+    display: none;
 }

@@ -2,6 +2,9 @@ import "./bannerBottom.scss";
 import Text from "../../atoms/text/text";
 import Image from "../../atoms/image/image"
 import Rabita from "../../assets/images/rabita.jpeg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faAddressBook, faDownload } from "@fortawesome/free-solid-svg-icons";
 const BannerBottom = () => {
     return (
         <div className="o-banner-bottom">
@@ -17,9 +20,6 @@ const BannerBottom = () => {
                 children="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, deserunt itaque similique odit reprehenderit quod! Consectetur dolore optio at quo incidunt, illo dicta commodi minima aliquam esse consequuntur porro dignissimos."
                 className="o-banner-bottom__lower-text"
             />
-            <div>
-                <Image src={Rabita} className="o-banner-bottom__image" />
-            </div>
         </div>
     )
 }
