@@ -5,6 +5,7 @@ import experienceLottie from "../../assets/lotties/experience.json";
 import Lottie from "lottie-react";
 import "./experience.scss";
 const Experience = () => {
+
     return (
         <div className="o-experience">
             <Text className="o-experience__heading" children="Experience" />

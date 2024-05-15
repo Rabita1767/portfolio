@@ -1,10 +1,6 @@
 import "./bannerBottom.scss";
 import Text from "../../atoms/text/text";
-import Image from "../../atoms/image/image"
-import Rabita from "../../assets/images/rabita.jpeg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faAddressBook, faDownload } from "@fortawesome/free-solid-svg-icons";
+
 const BannerBottom = () => {
     return (
         <div className="o-banner-bottom">

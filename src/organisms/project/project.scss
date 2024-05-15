@@ -1,0 +1,52 @@
+@import "../../styles/index.scss";
+
+.o-project {
+    margin-top: 3rem;
+
+    &__container {
+        column-gap: 2rem;
+        margin: 5%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        @include breakpoint("md") {
+
+            row-gap: 2rem;
+        }
+    }
+
+    &__content {
+        border: 5px solid var(--textColor);
+        border-radius: 0 1rem;
+        padding: 1.5rem 1rem;
+        flex-basis: 27%;
+        margin-bottom: 1.5rem;
+        cursor: pointer;
+    }
+
+    &__subHeader {
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    &__text {
+        margin-bottom: 8px;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    &__contentText {
+        display: flex;
+        column-gap: 1rem;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    &__contentTextBottom {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}

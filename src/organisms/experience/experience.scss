@@ -1,13 +1,6 @@
 @import "../../mixin";
 
 .o-experience {
-    margin-top: 5rem;
-
-    @include breakpoint("md") {
-        margin-top: 25rem;
-    }
-
-
     &__heading {
         text-align: center;
         font-size: 3rem;

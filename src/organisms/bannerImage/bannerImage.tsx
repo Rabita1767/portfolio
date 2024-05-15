@@ -5,6 +5,7 @@ import laptop from "../../assets/lotties/laptop1.json";
 import "./bannerImage.scss";
 import Lottie from 'lottie-react';
 const BannerImage = () => {
+
     return (
         <>
             <div className='o-intro'>
@@ -26,25 +27,26 @@ const BannerImage = () => {
                             />
                         </div>
                     </div>
-                    <div className='o-intro__intro-content'>
-                        <div className='o-intro__intro-content--left'>
-                            <Text
-                                children="Rabita Amin"
-                                className='o-intro__intro-content--left--heading'
-                            />
-                            <Text
-                                children="Hello, I am Rabita Amin, a Full-Stack Engineer."
-                                className='o-intro__intro-content--right--paragraph'
-                            />
-                            <Text
-                                children="I completed my Bachelor's degree in Information Technology (IT) from Jahangirnagar University (JU). I am a quick learner, love new challenges. I have good knowledge of data structures and algorithms. I am currently pursuing my career as a software engineer at BJIT and boosting my skills on Full-Stack web development technologies. Besides programming, I love to watch anime. Enjoy good music, movies and series."
-                                className='o-intro__intro-content--right--paragraph'
-                            />
-                        </div>
-                        <div className='o-intro__intro-content--right'>
-                            <Lottie animationData={laptop} />
-                            {/* <Image src={monitor} /> */}
-                        </div>
+
+                </div>
+                <div className='o-intro__intro-content'>
+                    <div className='o-intro__intro-content--left'>
+                        <Text
+                            children="Rabita Amin"
+                            className='o-intro__intro-content--left--heading'
+                        />
+                        <Text
+                            children="Hello, I am Rabita Amin, a Full-Stack Engineer."
+                            className='o-intro__intro-content--right--paragraph'
+                        />
+                        <Text
+                            children="I completed my Bachelor's degree in Information Technology (IT) from Jahangirnagar University (JU). I am a quick learner, love new challenges. I have good knowledge of data structures and algorithms. I am currently pursuing my career as a software engineer at BJIT and boosting my skills on Full-Stack web development technologies. Besides programming, I love to watch anime. Enjoy good music, movies and series."
+                            className='o-intro__intro-content--right--paragraph'
+                        />
+                    </div>
+                    <div className='o-intro__intro-content--right'>
+                        <Lottie animationData={laptop} />
+                        {/* <Image src={monitor} /> */}
                     </div>
                 </div>
 

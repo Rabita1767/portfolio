@@ -41,11 +41,13 @@ const Banner = () => {
                 </div>
             </div>
             <div className="o-banner-bottom__container">
+                <div className="o-banner__hello">
+                    <Text
+                        children="Hello..."
+                        className="o-banner-bottom__text"
+                    />
 
-                <Text
-                    children="Hello..."
-                    className="o-banner-bottom__text"
-                />
+                </div>
                 <div className="o-banner-bottom__container--image">
                     <Image src={Rabita} className="o-banner-bottom__image" />
                 </div>
