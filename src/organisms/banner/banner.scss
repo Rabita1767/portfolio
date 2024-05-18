@@ -3,11 +3,11 @@
 .o-banner {
     position: relative;
     display: flex;
-    // height: 813px;
     height: 400px;
 
     @include breakpoint("md") {
         padding-bottom: 15rem;
+        height: 200px;
     }
 
     &__left {
@@ -41,6 +41,10 @@
 
     &__hello {
         width: 100px;
+
+        @include breakpoint("sm") {
+            display: none;
+        }
     }
 
 }
@@ -55,6 +59,7 @@
     top: 5%;
     right: 2%;
     border-radius: 8px;
+    z-index: 2;
 
     .svg-inline--fa {
         font-size: 2.5rem;

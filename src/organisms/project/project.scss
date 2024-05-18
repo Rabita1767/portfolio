@@ -23,6 +23,10 @@
         flex-basis: 27%;
         margin-bottom: 1.5rem;
         cursor: pointer;
+
+        @include breakpoint("md") {
+            flex-basis: 100%;
+        }
     }
 
     &__subHeader {

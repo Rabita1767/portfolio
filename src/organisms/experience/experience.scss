@@ -6,6 +6,10 @@
         font-size: 3rem;
         font-weight: 600;
         color: var(--textColor);
+
+        @include breakpoint("sm") {
+            font-size: 2rem;
+        }
     }
 
     &__container {
@@ -16,6 +20,10 @@
         @include breakpoint("md") {
             margin: 0 2rem;
         }
+
+        @include breakpoint("sm") {
+            display: block;
+        }
     }
 
     &__container--left {
@@ -24,10 +32,14 @@
         @include breakpoint("md") {
             flex-basis: 40%;
         }
+
+        @include breakpoint("sm") {
+            display: none;
+        }
     }
 
     &__container--right {
-        padding-top: 6%;
+        padding-top: 2rem
     }
 
     &__container--right--sm {
@@ -38,6 +50,12 @@
 
         @include breakpoint("md") {
             padding: 30px 125px 50px 40px;
+        }
+
+        @include breakpoint("sm") {
+            max-width: 300px;
+            margin: auto;
+            padding: 1rem;
         }
     }
 

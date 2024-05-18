@@ -3,6 +3,8 @@
     src: url(../../assets//YustineSignature.ttf);
 }
 
+@import "../../styles/index.scss";
+
 
 .o-header {
     display: flex;
@@ -23,6 +25,10 @@
         font-size: 4rem;
         color: #b97ebb;
 
+        @include breakpoint("sm") {
+            font-size: 2.5rem;
+        }
+
     }
 
     &__right--btn {
@@ -36,6 +42,10 @@
         color: #b97ebb;
         padding: 0.6em 1.2em;
         cursor: pointer;
+
+        @include breakpoint("sm") {
+            display: none;
+        }
     }
 
     &__right--btn:hover {
@@ -47,6 +57,10 @@
 .svg-inline--fa {
     font-size: 2.5rem;
     cursor: pointer;
+
+    @include breakpoint("sm") {
+        font-size: 2rem;
+    }
 }
 
 .svg-inline--fa:hover {

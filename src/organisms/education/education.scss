@@ -1,0 +1,41 @@
+@import "../../styles//index.scss";
+
+.o-education {
+    &__container {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2rem;
+
+        @include breakpoint("sm") {
+            display: block;
+        }
+    }
+
+    &__containerLeft {
+        flex-basis: 40%;
+
+        @include breakpoint("sm") {
+            display: none;
+        }
+    }
+
+    &__containerRight {
+        flex-basis: 40%;
+        display: flex;
+        row-gap: 1rem;
+        flex-direction: column;
+        margin-bottom: 2rem;
+
+        @include breakpoint("sm") {
+            max-width: 320px;
+            margin: 0 auto 2rem auto;
+        }
+    }
+
+    &__contentRight {
+        border-radius: 0.5rem;
+        padding: 0.5em 1rem;
+        background-color: rgba(153, 153, 153, 0.2);
+        flex-basis: 30%;
+    }
+}

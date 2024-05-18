@@ -1,7 +1,7 @@
 import "./banner.scss";
 import Header from "../header/header";
 import BannerBottom from "../../molecules/bannerBottom/bannerBottom";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Text from "../../atoms/text/text";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -17,10 +17,30 @@ const Banner = () => {
     const handleClose = () => {
         setViewMenu(false);
     }
+    const divRef = useRef(null);
+    const [divHeight, setDivHeight] = useState(0);
+    useEffect(() => {
+        function handleResize() {
+            // Update the height of the div when the window is resized
+            setDivHeight(window.innerHeight);
+        }
+
+        // Set initial height on component mount
+        setDivHeight(window.innerHeight);
+
+        // Add event listener to handle window resize
+        window.addEventListener('resize', handleResize);
+
+        // Remove event listener on component unmount
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+    // style={{ height: `${divHeight}px` }}
     return (
         <>
 
-            <div className="o-banner">
+            <div className="o-banner" >
                 <Header onMenuClick={onMenuClickHandler} />
                 <div className="o-banner__left"></div>
                 <div className="o-banner__right"></div>
