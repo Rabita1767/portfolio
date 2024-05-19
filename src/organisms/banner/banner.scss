@@ -48,6 +48,12 @@
         }
     }
 
+    &__about {
+        @include breakpoint("sm") {
+            display: none;
+        }
+    }
+
 }
 
 .o-menu {
@@ -73,6 +79,7 @@
     .svg-inline--fa:hover {
         color: black;
     }
+
 
 }
 

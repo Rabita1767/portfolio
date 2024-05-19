@@ -11,10 +11,8 @@ const Contact = () => {
     const [message, setMessage] = useState<string>('');
 
     const handleSubmit = (e?: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-        e.preventDefault()
-        console.log("name", name);
-        console.log("name", email);
-        console.log("name", message);
+        if (e)
+            e.preventDefault()
         setName("");
         setEmail("");
         setMessage("");
@@ -47,7 +45,7 @@ const Contact = () => {
                                     onChange={setMessage} isRequired />
                             </div>
                         </div>
-                        <Button type="submit" className="o-contact__button" onClick={(e) => handleSubmit(e)} children="Submit" />
+                        <Button type="submit" className="o-contact__button" onClick={(e: React.MouseEvent<HTMLButtonElement>) => handleSubmit(e)} children="Submit" />
                     </form>
                 </div>
                 <div className="o-contact__info">

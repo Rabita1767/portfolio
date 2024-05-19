@@ -1,6 +1,4 @@
 import Text from "../../atoms/text/text";
-import monitor from "../../assets/images/Monitor-cuate.svg";
-import Image from "../../atoms/image/image";
 import experienceLottie from "../../assets/lotties/experience.json";
 import Lottie from "lottie-react";
 import "./experience.scss";

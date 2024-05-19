@@ -1,12 +1,12 @@
 import "./banner.scss";
 import Header from "../header/header";
 import BannerBottom from "../../molecules/bannerBottom/bannerBottom";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import Text from "../../atoms/text/text";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faAddressBook, faDownload, faMoon, faSun, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faAddressBook, faMoon, faSun, faXmark } from "@fortawesome/free-solid-svg-icons";
 import Image from "../../atoms/image/image";
 import Rabita from "../../assets/images/rabita.jpeg";
 import { motion } from "framer-motion";
@@ -69,7 +69,7 @@ const Banner: React.FC<IProps> = ({ handleDarkModeClick, handleLightModeClick, i
                 </div>
                 <div className="o-banner__nav">
                     <Text children="Home" onClick={() => window.location.href = "/"} />
-                    <Text children="About Me" onClick={scrollToAbout} />
+                    <Text children="About Me" onClick={scrollToAbout} className="o-banner__about" />
                     <Text children="Experience" onClick={scrollToExperience} />
                     <Text children="Education" onClick={scrollToEducation} />
                     <Text children="Contact" onClick={scrollToContact} />

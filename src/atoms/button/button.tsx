@@ -3,7 +3,7 @@ import "./button.scss"
 interface ButtonProps {
     type: 'button' | 'submit' | 'reset';
     className?: string;
-    onClick?: () => void;
+    onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
     children: React.ReactNode;
 }
 
