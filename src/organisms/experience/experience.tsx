@@ -6,11 +6,15 @@ import Lottie from "lottie-react";
 import "./experience.scss";
 const Experience = () => {
 
+
     return (
-        <div className="o-experience">
+        <div className="o-experience" id="o-experience__id">
             <Text className="o-experience__heading" children="Experience" />
-            <div className="o-experience__container">
-                <div className="o-experience__container--left">
+            <div className="o-experience__container" >
+                <div
+
+                    className="o-experience__container--left"
+                >
                     <Lottie animationData={experienceLottie} />
                 </div>
                 <div className="o-experience__container--right">

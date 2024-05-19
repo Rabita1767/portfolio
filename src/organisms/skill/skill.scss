@@ -18,16 +18,22 @@
     &__content {
         display: flex;
         align-items: center;
-        // padding: 5px 20px;
         padding: 1.5rem;
-
-        background-color: rgba(153, 153, 153, 0.2);
+        background-color: var(--skillBackground);
+        color: var(--hamBurgerMenu-white);
         border-radius: 8px;
         margin-bottom: 2rem;
     }
 
     &__lottie {
         width: 95px;
+        font-size: 3.5rem;
+    }
+
+    &__img {
+        width: 50px;
+        height: 50px;
+        margin-right: 1rem;
     }
 
     &__text {

@@ -21,7 +21,7 @@ const Contact = () => {
 
     }
     return (
-        <div className="o-contact">
+        <div className="o-contact" id="o-contact__id">
             <Text children="Contact" className="o-experience__heading" />
             <div className="o-contact__container">
                 <div className="o-contact__form">

@@ -22,14 +22,14 @@ const BannerImage = () => {
                         </div>
                         <div>
                             <Text
-                                children=" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem omnis natus vero expedita excepturi. Laudantium, consequuntur maxime! Dicta amet nisi vitae quidem iure esse, modi autem corrupti ipsam velit?"
+                                children="I am a professional and enthusiastic programmer in my daily life. I am a quick learner and love to learn and explore new technologies. I love almost all the stacks of web application development and love to make the web more open to the world. My core skill is based on JavaScript and I love to do most of the things using JavaScript."
                                 className='o-intro__paragraph'
                             />
                         </div>
                     </div>
 
                 </div>
-                <div className='o-intro__intro-content'>
+                <div className='o-intro__intro-content' id="o-intro__id">
                     <div className='o-intro__intro-content--left'>
                         <Text
                             children="Rabita Amin"

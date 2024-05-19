@@ -4,27 +4,39 @@
     &__container {
         display: flex;
         justify-content: space-around;
-        margin-top: 2rem;
+
+        margin: 2rem;
 
         @include breakpoint("sm") {
             display: block;
         }
     }
 
-    &__containerLeft {
-        flex-basis: 40%;
+    // &__containerLeft {
+    //     flex-basis: 40%;
 
-        @include breakpoint("sm") {
-            display: none;
-        }
-    }
+    //     @include breakpoint("md") {
+    //         display: none;
+    //     }
+
+    //     @include breakpoint("sm") {
+    //         display: none;
+    //     }
+    // }
 
     &__containerRight {
-        flex-basis: 40%;
+        flex-basis: 60%;
         display: flex;
         row-gap: 1rem;
         flex-direction: column;
         margin-bottom: 2rem;
+        background-color: var(--projectBackground);
+        color: var(--hamBurgerMenu-white);
+
+        @include breakpoint("md") {
+            flex-basis: 100%;
+
+        }
 
         @include breakpoint("sm") {
             max-width: 320px;

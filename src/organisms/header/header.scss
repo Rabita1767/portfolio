@@ -38,10 +38,14 @@
         font-family: var(--primaryFont);
         font-size: 1.2rem;
         font-weight: 700;
-        background-color: #fff;
+        background-color: var(--projectBackground);
         color: #b97ebb;
         padding: 0.6em 1.2em;
         cursor: pointer;
+
+        @include breakpoint("md") {
+            display: none;
+        }
 
         @include breakpoint("sm") {
             display: none;
@@ -52,17 +56,20 @@
         background-color: #b97ebb;
         color: #fff;
     }
-}
 
-.svg-inline--fa {
-    font-size: 2.5rem;
-    cursor: pointer;
+    .svg-inline--fa {
+        font-size: 2.5rem;
+        cursor: pointer;
 
-    @include breakpoint("sm") {
-        font-size: 2rem;
+        color: var(--hamBurgerMenu-white);
+
+        @include breakpoint("sm") {
+            font-size: 2rem;
+        }
     }
-}
 
-.svg-inline--fa:hover {
-    color: #b97ebb
+    .svg-inline--fa:hover {
+        color: #b97ebb
+    }
+
 }

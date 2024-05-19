@@ -6,6 +6,7 @@
         font-size: 3rem;
         font-weight: 600;
         color: var(--textColor);
+        margin-top: 2rem;
 
         @include breakpoint("sm") {
             font-size: 2rem;
@@ -43,7 +44,7 @@
     }
 
     &__container--right--sm {
-        background-color: var(--textColor);
+        background-color: var(--pinkBackground);
         padding: 30px 320px 50px 40px;
         border-radius: 8px;
         color: #fff;

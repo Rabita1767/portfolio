@@ -3,11 +3,16 @@
 .o-contact {
     &__container {
         display: flex;
-        margin: 3rem;
         column-gap: 3rem;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: baseline;
+        align-items: stretch;
+
+        @include breakpoint("md") {
+            flex-direction: column;
+            margin: 0 2rem;
+
+        }
 
         @include breakpoint("sm") {
             max-width: 320px;
@@ -16,11 +21,12 @@
     }
 
     &__form {
-        flex-basis: 40%;
+        flex-basis: 50%;
         border: 1px solid var(--textColor);
         border-radius: 0 1rem;
         padding: 2rem 4rem;
         margin-bottom: 2rem;
+        background-color: var(--projectBackground);
 
         @include breakpoint("sm") {
             margin-top: 2rem;

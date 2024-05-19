@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   /* outline: 1px solid red; */
 }
 
@@ -17,10 +18,32 @@ body {
 }
 
 :root {
+  --background-color: transparent;
+  --textBlack: #000000;
+  --opacity: 0.7;
+  --hamBurgerMenu-white: none;
+  --pinkBackground: #b97ebb;
+  --containerBackground: #fff;
+  --skillBackground: rgba(153, 153, 153, 0.2);
+  --projectBackground: none;
+  --inputColor: none;
   --primaryFont: eurostile, sans-serif;
   --textColor: #b97ebb;
   line-height: 1.5;
-  /* color: #141c3a */
   --Bluecolor: #130F49;
   --Blackcolor: #1A1818;
+  --paraText: 1.15rem;
+}
+
+[dark-theme="dark"] {
+  --background-color: rgb(15, 12, 65);
+  --textBlack: #fff;
+  --opacity: 0;
+  --hamBurgerMenu-white: #fff;
+  --pinkBackground: rgb(12, 11, 51);
+  --containerBackground: rgb(12, 11, 51);
+  --skillBackground: rgb(12, 11, 51);
+  --projectBackground: rgb(12, 11, 51);
+  --inputColor: rgb(15, 12, 65);
+
 }

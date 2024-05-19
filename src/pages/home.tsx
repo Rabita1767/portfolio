@@ -5,12 +5,21 @@ import { Skill } from "../organisms/skill/skill";
 import Project from "../organisms/project/project";
 import Contact from "../organisms/contact/contact";
 import { Education } from "../organisms/education/education";
+import "./home.scss";
+import { useState } from "react";
 const Home = () => {
+    const [isDark, setIsDark] = useState(false);
+    const handleDarkMode = () => {
+        setIsDark(true);
+    }
+    const handleLightMode = () => {
+        setIsDark(false);
+    }
+
     return (
         <>
-            <div>
-                <Banner />
-
+            <div className="o-home" dark-theme={isDark ? "dark" : ""}>
+                <Banner handleDarkModeClick={handleDarkMode} handleLightModeClick={handleLightMode} isDark={isDark} />
                 <BannerImage />
                 <Experience />
 
