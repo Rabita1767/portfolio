@@ -4,25 +4,14 @@
     &__container {
         display: flex;
         justify-content: space-around;
-
-        margin: 2rem;
+        margin: 4rem 1rem 1rem 1rem;
 
         @include breakpoint("sm") {
             display: block;
         }
     }
 
-    // &__containerLeft {
-    //     flex-basis: 40%;
 
-    //     @include breakpoint("md") {
-    //         display: none;
-    //     }
-
-    //     @include breakpoint("sm") {
-    //         display: none;
-    //     }
-    // }
 
     &__containerRight {
         flex-basis: 60%;

@@ -17,6 +17,7 @@
         display: flex;
         justify-content: center;
         gap: 5%;
+        margin-top: 4rem;
 
         @include breakpoint("md") {
             margin: 0 2rem;

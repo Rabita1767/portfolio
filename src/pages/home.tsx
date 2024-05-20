@@ -10,6 +10,7 @@ import { useState } from "react";
 const Home = () => {
     const [isDark, setIsDark] = useState(false);
     const handleDarkMode = () => {
+
         setIsDark(true);
     }
     const handleLightMode = () => {
@@ -19,14 +20,18 @@ const Home = () => {
     return (
         <>
             <div className="o-home" dark-theme={isDark ? "dark" : ""}>
-                <Banner handleDarkModeClick={handleDarkMode} handleLightModeClick={handleLightMode} isDark={isDark} />
-                <BannerImage />
-                <Experience />
+                <div className="o-home__flex" >
+                    <Banner handleDarkModeClick={handleDarkMode} handleLightModeClick={handleLightMode} isDark={isDark} />
+                    <BannerImage />
+                </div>
+                <div>
+                    <Experience />
+                    <Skill />
+                    <Project />
+                    <Education />
+                    <Contact />
 
-                <Skill />
-                <Project />
-                <Education />
-                <Contact />
+                </div>
             </div>
         </>
     )

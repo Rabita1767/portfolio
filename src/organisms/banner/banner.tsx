@@ -1,20 +1,16 @@
 import "./banner.scss";
-import Header from "../header/header";
 import BannerBottom from "../../molecules/bannerBottom/bannerBottom";
 import React, { useState } from "react";
 import Text from "../../atoms/text/text";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faAddressBook, faMoon, faSun, faXmark } from "@fortawesome/free-solid-svg-icons";
-import Image from "../../atoms/image/image";
-import Rabita from "../../assets/images/rabita.jpeg";
-import { motion } from "framer-motion";
+
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useScrollToElement } from "../../hooks/useScrollTo";
+import Button from "../../atoms/button/button";
 interface IProps {
-    isDark?: boolean;
     handleDarkModeClick: () => void;
     handleLightModeClick: () => void;
+    isDark?: boolean;
 }
 
 const Banner: React.FC<IProps> = ({ handleDarkModeClick, handleLightModeClick, isDark }) => {
@@ -50,17 +46,24 @@ const Banner: React.FC<IProps> = ({ handleDarkModeClick, handleLightModeClick, i
         handleScroll("o-experience__id");
         setViewMenu(false);
     }
-    const delay = 1;
-    const duration = 0.85;
 
     return (
         <>
             <div className="o-banner" >
-                <Header onMenuClick={onMenuClickHandler} />
+                <div className="o-banner__header">
+                    <div className="o-banner__headerLeft">
+                        <p>rabita</p>
+                    </div>
+                    <div className="o-banner__headerRight">
+                        <Button children="Say Hello" className="o-banner__right--btn" type="submit" onClick={scrollToContact} />
+
+                        <FontAwesomeIcon icon={faBars} onClick={onMenuClickHandler} />
+
+                    </div>
+                    <BannerBottom handleDarkModeClick={handleDarkModeClick} handleLightModeClick={handleLightModeClick} isDark={isDark} />
+                </div>
                 <div className="o-banner__left"></div>
                 <div className="o-banner__right"></div>
-                <BannerBottom />
-
 
             </div>
             <div className={viewMenu === true ? `o-menu` : `o-menu-hidden`}>
@@ -76,41 +79,12 @@ const Banner: React.FC<IProps> = ({ handleDarkModeClick, handleLightModeClick, i
 
                 </div>
             </div>
-            <div
-                className="o-banner-bottom__container">
-                <motion.div
-                    animate={{ opacity: 1, x: 0 }}
-                    initial={{ opacity: 0, x: -20 }}
-                    transition={{ duration: duration, delay: delay }}
-                    className="o-banner__hello">
-                    <Text
-                        children="Hello..."
-                        className="o-banner-bottom__text"
-                    />
 
-                </motion.div>
-                <div className="o-banner-bottom__container--image">
-                    <Image src={Rabita} className="o-banner-bottom__image" />
-                </div>
-                <motion.div
-                    animate={{ opacity: 1, x: 0 }}
-                    initial={{ opacity: 0, x: 20 }}
-                    transition={{ duration: duration, delay: delay }}
-                    className="o-banner-bottom__icon">
-                    <FontAwesomeIcon icon={faGithub} onClick={() => window.open("https://github.com/Rabita1767", "_blank")}
-                    />
-                    <FontAwesomeIcon icon={faLinkedin} onClick={() => window.open("https://www.linkedin.com/in/rabita-amin/", "_blank")}
-                    />
-                    <FontAwesomeIcon icon={faAddressBook} onClick={() => window.open("mailto:rabitaamin015@gmail.com", "_blank")} />
-
-                    {isDark && <FontAwesomeIcon icon={faSun} onClick={handleLightModeClick} />}
-                    {!isDark && <FontAwesomeIcon icon={faMoon} onClick={handleDarkModeClick} />}
-
-                </motion.div>
-            </div>
 
         </>
     )
 }
 
-export default Banner
+export default Banner;
+
+

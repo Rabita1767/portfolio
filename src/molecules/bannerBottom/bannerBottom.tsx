@@ -1,7 +1,18 @@
 import "./bannerBottom.scss";
 import Text from "../../atoms/text/text";
 import { motion } from "framer-motion";
-const BannerBottom = () => {
+import Image from "../../atoms/image/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faAddressBook, faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import Rabita from "../../assets/images/rabita.jpeg";
+import React from "react";
+interface IProps {
+    isDark?: boolean;
+    handleDarkModeClick: () => void;
+    handleLightModeClick: () => void;
+}
+const BannerBottom: React.FC<IProps> = ({ handleDarkModeClick, handleLightModeClick, isDark }) => {
     const delay = 1;
     const duration = 0.85;
     return (
@@ -31,8 +42,39 @@ const BannerBottom = () => {
                     children="Software Engineer and a new IT gradute , having a strong foundation on the fundamentamentals of web development and apassion for creating user-friendly web-application"
                     className="o-banner-bottom__lower-text"
                 />
-
             </motion.div>
+            <div
+                className="o-banner-bottom__container">
+                <motion.div
+                    animate={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, x: -5 }}
+                    transition={{ duration: duration, delay: delay }}
+                    className="o-banner__hello">
+                    <Text
+                        children="Hello..."
+                        className="o-banner-bottom__text"
+                    />
+
+                </motion.div>
+                <div className="o-banner-bottom__container--image">
+                    <Image src={Rabita} className="o-banner-bottom__image" />
+                </div>
+                <motion.div
+                    animate={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, x: 5 }}
+                    transition={{ duration: duration, delay: delay }}
+                    className="o-banner-bottom__icon">
+                    <FontAwesomeIcon icon={faGithub} onClick={() => window.open("https://github.com/Rabita1767", "_blank")}
+                    />
+                    <FontAwesomeIcon icon={faLinkedin} onClick={() => window.open("https://www.linkedin.com/in/rabita-amin/", "_blank")}
+                    />
+                    <FontAwesomeIcon icon={faAddressBook} onClick={() => window.open("mailto:rabitaamin015@gmail.com", "_blank")} />
+
+                    {isDark && <FontAwesomeIcon icon={faSun} onClick={handleLightModeClick} />}
+                    {!isDark && <FontAwesomeIcon icon={faMoon} onClick={handleDarkModeClick} />}
+
+                </motion.div>
+            </div>
 
         </div>
     )

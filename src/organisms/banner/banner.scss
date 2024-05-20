@@ -1,3 +1,8 @@
+@font-face {
+    font-family: yustineSignature;
+    src: url(../../assets//YustineSignature.ttf);
+}
+
 @import "../../mixin";
 
 .o-banner {
@@ -7,7 +12,7 @@
 
     @include breakpoint("md") {
         padding-bottom: 15rem;
-        height: 200px;
+        // height: 200px;
     }
 
 
@@ -30,8 +35,8 @@
     }
 
     &__nav {
-        padding-top: 15px;
-        padding-left: 45px;
+        padding-left: 3rem;
+        padding-bottom: 3rem;
         color: #fff;
         font-size: 1.5rem;
         display: flex;
@@ -42,6 +47,10 @@
 
     &__hello {
         width: 100px;
+
+        @include breakpoint("md") {
+            display: none;
+        }
 
         @include breakpoint("sm") {
             display: none;
@@ -54,6 +63,73 @@
         }
     }
 
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 3.5rem;
+        position: absolute;
+        width: -webkit-fill-available;
+    }
+
+    &__headerLeft {
+        font-family: yustineSignature;
+        font-size: 4rem;
+        color: #b97ebb;
+
+        @include breakpoint("sm") {
+            font-size: 2.5rem;
+        }
+
+    }
+
+    &__headerRight {
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    &__right--btn {
+        border: 5px solid #b97ebb;
+        border-radius: 30px;
+        width: 150px;
+        font-family: var(--primaryFont);
+        font-size: 1.2rem;
+        font-weight: 700;
+        background-color: var(--projectBackground);
+        color: #b97ebb;
+        padding: 0.6em 1.2em;
+        cursor: pointer;
+
+        @include breakpoint("md") {
+            display: none;
+        }
+
+        @include breakpoint("sm") {
+            display: none;
+        }
+    }
+
+    &__right--btn:hover {
+        background-color: #b97ebb;
+        color: #fff;
+    }
+
+    .svg-inline--fa {
+        font-size: 2.5rem;
+        cursor: pointer;
+
+        color: var(--hamBurgerMenu-white);
+
+        @include breakpoint("sm") {
+            font-size: 2rem;
+        }
+    }
+
+    .svg-inline--fa:hover {
+        color: #b97ebb
+    }
+
 }
 
 .o-menu {
@@ -61,7 +137,6 @@
     flex-direction: column;
     background-color: var(--pinkBackground);
     width: 350px;
-    height: 400px;
     position: absolute;
     top: 5%;
     right: 2%;

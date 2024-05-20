@@ -10,16 +10,16 @@
         }
 
         @include breakpoint("sm") {
-            max-width: 200px;
+            max-width: 250px;
         }
     }
 
     &__color {
         background-color: var(--pinkBackground);
-
         margin-top: -155px;
-        height: 70vh;
-
+        display: flex;
+        flex-direction: column;
+        row-gap: 7rem;
 
     }
 
@@ -27,13 +27,8 @@
         padding: 7rem 4.5rem;
         color: #fff;
 
-        @include breakpoint("md") {
-            padding: 7rem 0 4rem 0;
-
-        }
-
         @include breakpoint("sm") {
-            padding: 7rem 2rem;
+            padding: 7rem 1rem;
 
         }
     }
@@ -65,12 +60,17 @@
     &__intro-content {
         margin-left: 5rem;
         margin-right: 5rem;
-        border-radius: 1rem;
+        border-radius: 1rem 1rem 0 0;
         background-color: var(--containerBackground);
         display: flex;
         justify-content: space-around;
         margin-top: -150px;
         flex-wrap: wrap;
+
+        @include breakpoint("md") {
+            flex-direction: column;
+
+        }
 
         @include breakpoint("sm") {
             display: none;

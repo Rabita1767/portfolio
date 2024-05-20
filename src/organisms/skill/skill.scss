@@ -8,6 +8,7 @@
         flex-wrap: wrap;
         column-gap: 2%;
         justify-content: center;
+        margin-top: 4rem;
 
         @include breakpoint("sm") {
             margin-top: 2rem;
