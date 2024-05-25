@@ -66,6 +66,7 @@
         justify-content: space-around;
         margin-top: -150px;
         flex-wrap: wrap;
+        box-shadow: var(--introShadow) 0px 0px 12px;
 
         @include breakpoint("md") {
             flex-direction: column;

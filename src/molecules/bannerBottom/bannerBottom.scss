@@ -2,7 +2,7 @@
 
 .o-banner-bottom {
     position: absolute;
-    top: 78%;
+    top: 64%;
     bottom: 0;
     left: 0;
     right: 0;
@@ -58,12 +58,19 @@
         height: 300px;
         border-radius: 50%;
         object-fit: cover;
+        box-shadow: 0 0 30px #0003;
+        filter: grayscale(0);
+        transition: opacity .3s, filter 1s ease-in;
 
         @include breakpoint("sm") {
             width: 200px;
             height: 200px;
         }
 
+    }
+
+    &__image:hover {
+        filter: grayscale(100%);
     }
 
     &__text--div {
@@ -119,6 +126,18 @@
 
         @include breakpoint("md") {
             display: none;
+        }
+    }
+
+    &__dark-icon {
+        position: fixed;
+        right: 4%;
+        bottom: 8%;
+        z-index: 1;
+
+        .svg-inline--fa {
+            font-size: 1rem;
+            color: var(--darkIcon);
         }
     }
 

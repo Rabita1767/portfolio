@@ -33,6 +33,20 @@ body {
   --Bluecolor: #130F49;
   --Blackcolor: #1A1818;
   --paraText: 1.15rem;
+  --cursorcolor: #130F49;
+  --skillShadow: #b97ebb;
+  --introShadow: #f945ff;
+  --mouse: radial-gradient(circle,
+      rgba(185, 126, 187, 0.25),
+      rgba(185, 126, 187, 0.2),
+      rgba(185, 126, 187, 0.15),
+      rgba(185, 126, 187, 0.1),
+      rgba(185, 126, 187, 0.05),
+      rgba(185, 126, 187, 0.001),
+      rgba(185, 126, 187, 0.001),
+      rgba(185, 126, 187, 0.00000001));
+  --darkIcon: #130F49;
+
 }
 
 [dark-theme="dark"] {
@@ -45,5 +59,19 @@ body {
   --skillBackground: rgb(12, 11, 51);
   --projectBackground: rgb(12, 11, 51);
   --inputColor: rgb(15, 12, 65);
+  --cursorcolor: #b97ebb;
+  --skillShadow: rgb(29, 155, 240);
+  --introShadow: var(--skillShadow);
+  --mouse: radial-gradient(circle,
+      rgba(42, 73, 199, 0.25),
+      rgba(42, 73, 199, 0.2),
+      rgba(42, 73, 199, 0.15),
+      rgba(42, 73, 199, 0.1),
+      rgba(42, 73, 199, 0.05),
+      rgba(42, 73, 199, 0.001),
+      rgba(42, 73, 199, 0.001),
+      rgba(42, 73, 199, 0.00000001));
+  --darkIcon: rgba(163, 162, 162, 0.886);
+
 
 }

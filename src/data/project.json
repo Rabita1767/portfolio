@@ -1,0 +1,33 @@
+[
+    {
+        "title": "LearnWave-E-learning-platform",
+        "content": "A simple e-learning project with both admin and user side.",
+        "technology": [
+            "React JS",
+            "Node JS",
+            "MongoDB",
+            "Tailwind CSS"
+        ],
+        "link": ""
+    },
+    {
+        "title": "Online Book Store",
+        "content": "Online book store application with both admin and user side.",
+        "technology": [
+            "Node JS",
+            "MongoDB"
+        ],
+        "link": ""
+    },
+    {
+        "title": "Plasma Bank-Management System",
+        "content": "A simple plasma management system with both user and admin side",
+        "technology": [
+            "HTML",
+            "PHP",
+            "Mysql",
+            "CSS"
+        ],
+        "link": ""
+    }
+]

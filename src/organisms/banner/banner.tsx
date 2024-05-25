@@ -71,11 +71,17 @@ const Banner: React.FC<IProps> = ({ handleDarkModeClick, handleLightModeClick, i
                     <FontAwesomeIcon icon={faXmark} />
                 </div>
                 <div className="o-banner__nav">
-                    <Text children="Home" onClick={() => window.location.href = "/"} />
-                    <Text children="About Me" onClick={scrollToAbout} className="o-banner__about" />
-                    <Text children="Experience" onClick={scrollToExperience} />
-                    <Text children="Education" onClick={scrollToEducation} />
-                    <Text children="Contact" onClick={scrollToContact} />
+
+                    <Text className="o-banner__navItem" children="Home" onClick={() => window.location.href = "/"} />
+
+
+                    <Text children="About Me" onClick={scrollToAbout} className="o-banner__navItem o-banner__about" />
+                    <Text className="o-banner__navItem" children="Experience" onClick={scrollToExperience} />
+
+                    <Text className="o-banner__navItem" children="Education" onClick={scrollToEducation} />
+
+                    <Text className="o-banner__navItem" children="Contact" onClick={scrollToContact} />
+
 
                 </div>
             </div>

@@ -49,6 +49,7 @@
         padding: 30px 320px 50px 40px;
         border-radius: 8px;
         color: #fff;
+        box-shadow: var(--introShadow) 0px 0px 12px;
 
         @include breakpoint("md") {
             padding: 30px 125px 50px 40px;

@@ -29,6 +29,7 @@
         padding: 2rem 4rem;
         margin-bottom: 2rem;
         background-color: var(--projectBackground);
+        box-shadow: var(--skillShadow) 0px 0px 12px;
 
         @include breakpoint("sm") {
             margin-top: 2rem;

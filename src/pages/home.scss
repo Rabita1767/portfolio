@@ -1,10 +1,53 @@
 .o-home {
     background-color: var(--background-color);
+    cursor: none;
 
     &__flex {
         display: flex;
         flex-direction: column;
         row-gap: 23rem;
 
+    }
+}
+
+.cursor__dot {
+    width: 5px;
+    height: 5px;
+    background-color: var(--cursorcolor);
+
+}
+
+.cursor__outline {
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--cursorcolor);
+}
+
+.cursor__dot,
+.cursor__outline,
+.light__effect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.light__effect {
+    width: 1200px;
+    height: 1200px;
+    background: var(--mouse);
+
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+
+    100% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 1);
     }
 }

@@ -4,17 +4,27 @@ import Text from '../../atoms/text/text';
 import laptop from "../../assets/lotties/laptop1.json";
 import "./bannerImage.scss";
 import Lottie from 'lottie-react';
+import { motion } from "framer-motion";
 const BannerImage = () => {
-
+    const delay = 0.5;
+    const duration = 1.8;
     return (
         <>
-            <div className='o-intro'>
+            <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: duration, delay: delay }}
+                className='o-intro'>
                 <div className='o-intro__image' >
                     <Image src={monitor} />
                 </div>
 
                 <div className='o-intro__color'>
-                    <div className='o-intro__text'>
+                    <motion.div
+                        initial={{ opacity: 0, x: -40 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: duration, delay: delay }}
+                        className='o-intro__text'>
                         <div>
                             <Text
                                 children="Nice to meet you."
@@ -27,9 +37,13 @@ const BannerImage = () => {
                                 className='o-intro__paragraph'
                             />
                         </div>
-                    </div>
+                    </motion.div>
 
-                    <div className='o-intro__intro-content' id="o-intro__id">
+                    <motion.div
+                        initial={{ opacity: 0, x: 40 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: duration, delay: delay }}
+                        className='o-intro__intro-content' id="o-intro__id">
                         <div className='o-intro__intro-content--left'>
                             <Text
                                 children="Rabita Amin"
@@ -48,14 +62,10 @@ const BannerImage = () => {
                             <Lottie animationData={laptop} />
 
                         </div>
-                    </div>
+                    </motion.div>
 
                 </div>
-
-
-
-
-            </div>
+            </motion.div>
 
         </>
     )

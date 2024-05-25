@@ -5,10 +5,13 @@ import Button from "../../atoms/button/button";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
 const Contact = () => {
     const [name, setName] = useState<string>('');
     const [email, setEmail] = useState<string>('');
     const [message, setMessage] = useState<string>('');
+    const delay = 0.5;
+    const duration = 1.8;
 
     const handleSubmit = (e?: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         if (e)
@@ -19,7 +22,11 @@ const Contact = () => {
 
     }
     return (
-        <div className="o-contact" id="o-contact__id">
+        <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: duration, delay: delay }}
+            className="o-contact" id="o-contact__id" >
             <Text children="Contact" className="o-experience__heading" />
             <div className="o-contact__container">
                 <div className="o-contact__form">
@@ -60,7 +67,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div >
     )
 }
 
