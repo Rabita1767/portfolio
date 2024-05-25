@@ -14,6 +14,7 @@ const Skill = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: duration, delay: delay }}
+                viewport={{ once: true }}
                 className="o-skill">
                 <Text children="My Skills" className="o-experience__heading" />
                 <div className="o-skill__container">

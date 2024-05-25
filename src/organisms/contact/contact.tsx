@@ -26,6 +26,7 @@ const Contact = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: duration, delay: delay }}
+            viewport={{ once: true }}
             className="o-contact" id="o-contact__id" >
             <Text children="Contact" className="o-experience__heading" />
             <div className="o-contact__container">

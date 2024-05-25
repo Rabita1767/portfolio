@@ -9,6 +9,7 @@ const Education = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: duration, delay: delay }}
+            viewport={{ once: true }}
             className="o-education" id="o-education__id">
             <Text children="Education" className="o-experience__heading" />
             <div className="o-education__container">

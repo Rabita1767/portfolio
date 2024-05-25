@@ -14,6 +14,7 @@ const BannerImage = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: duration, delay: delay }}
+                viewport={{ once: true }}
                 className='o-intro'>
                 <div className='o-intro__image' >
                     <Image src={monitor} />
@@ -24,6 +25,7 @@ const BannerImage = () => {
                         initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: duration, delay: delay }}
+                        viewport={{ once: true }}
                         className='o-intro__text'>
                         <div>
                             <Text
@@ -43,6 +45,7 @@ const BannerImage = () => {
                         initial={{ opacity: 0, x: 20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: duration, delay: delay }}
+                        viewport={{ once: true }}
                         className='o-intro__intro-content' id="o-intro__id">
                         <div className='o-intro__intro-content--left'>
                             <Text

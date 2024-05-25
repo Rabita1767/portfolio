@@ -2,6 +2,7 @@ import "./project.scss"
 import Text from "../../atoms/text/text";
 import { motion } from "framer-motion";
 import projectData from "../../data/project.json";
+import { Link } from "react-router-dom";
 const Project = () => {
     const delay = 0.5;
     const duration = 1.8;
@@ -10,6 +11,7 @@ const Project = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: duration, delay: delay }}
+            viewport={{ once: true }}
             className="o-project">
             <Text children="My Projects" className="o-experience__heading" />
             <div className="o-project__container">
@@ -31,7 +33,11 @@ const Project = () => {
                         </div>
                         <div className="o-project__contentTextBottom">
                             <Text children="Source Code" />
-                            <Text children={item.link} />
+                            {item.link == "" ? (
+                                <Text children="Unavailable" />
+                            ) :
+                                <Link to={item.link} target="_blank">Click Here</Link>
+                            }
                         </div>
                     </motion.div>
 
