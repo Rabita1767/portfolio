@@ -37,7 +37,7 @@ const BannerBottom: React.FC<IProps> = ({ handleDarkModeClick, handleLightModeCl
 
             </motion.div>
             <motion.div animate={{ opacity: 1, x: 0 }}
-                initial={{ opacity: 0, x: -20 }}
+                initial={{ opacity: 0, x: -5 }}
                 transition={{ duration: duration, delay: delay }}>
                 <Text
                     children={<span id="spin"></span>}

@@ -33,6 +33,10 @@
         @include breakpoint("md") {
             flex-basis: 100%;
         }
+
+        @include breakpoint("sm") {
+            flex-basis: 100%;
+        }
     }
 
     &__subHeader {

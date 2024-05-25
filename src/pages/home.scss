@@ -1,3 +1,5 @@
+@import "../styles//index.scss";
+
 .o-home {
     background-color: var(--background-color);
     cursor: none;
@@ -39,6 +41,15 @@
     width: 1200px;
     height: 1200px;
     background: var(--mouse);
+
+    @include breakpoint("md") {
+        display: none;
+    }
+
+    @include breakpoint("sm") {
+        width: 0px;
+        height: 0px;
+    }
 
 }
 

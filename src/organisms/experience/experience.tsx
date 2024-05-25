@@ -14,8 +14,8 @@ const Experience = () => {
             <Text className="o-experience__heading" children="Experience" />
             <div className="o-experience__container" >
                 <motion.div
-                    initial={{ opacity: 0, x: -40 }}
-                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, y: -20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: duration, delay: delay }}
 
                     className="o-experience__container--left"
@@ -23,8 +23,8 @@ const Experience = () => {
                     <Lottie animationData={experienceLottie} />
                 </motion.div>
                 <motion.div
-                    initial={{ opacity: 0, x: 40 }}
-                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: duration, delay: delay }}
                     className="o-experience__container--right">
                     <div className="o-experience__container--right--sm">
@@ -35,6 +35,7 @@ const Experience = () => {
                     </div>
                 </motion.div>
             </div>
+
         </motion.div>
     )
 }

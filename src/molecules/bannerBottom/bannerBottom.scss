@@ -135,10 +135,17 @@
         bottom: 8%;
         z-index: 1;
 
+        @include breakpoint("sm") {
+            right: 15%;
+        }
+
+
         .svg-inline--fa {
             font-size: 1rem;
             color: var(--darkIcon);
         }
+
+
     }
 
     .svg-inline--fa {

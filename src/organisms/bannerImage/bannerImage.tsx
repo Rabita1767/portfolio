@@ -21,7 +21,7 @@ const BannerImage = () => {
 
                 <div className='o-intro__color'>
                     <motion.div
-                        initial={{ opacity: 0, x: -40 }}
+                        initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: duration, delay: delay }}
                         className='o-intro__text'>
@@ -40,7 +40,7 @@ const BannerImage = () => {
                     </motion.div>
 
                     <motion.div
-                        initial={{ opacity: 0, x: 40 }}
+                        initial={{ opacity: 0, x: 20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: duration, delay: delay }}
                         className='o-intro__intro-content' id="o-intro__id">
