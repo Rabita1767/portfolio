@@ -17,12 +17,29 @@
     height: 5px;
     background-color: var(--cursorcolor);
 
+    @include breakpoint("md") {
+        display: none;
+    }
+
+    @include breakpoint("sm") {
+        display: none;
+    }
+
 }
 
 .cursor__outline {
     width: 30px;
     height: 30px;
     border: 2px solid var(--cursorcolor);
+
+    @include breakpoint("md") {
+        display: none;
+    }
+
+    @include breakpoint("sm") {
+        display: none;
+    }
+
 }
 
 .cursor__dot,
@@ -47,8 +64,7 @@
     }
 
     @include breakpoint("sm") {
-        width: 0px;
-        height: 0px;
+        display: none;
     }
 
 }
