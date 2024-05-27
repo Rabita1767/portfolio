@@ -49,7 +49,7 @@ const BannerBottom: React.FC<IProps> = ({ handleDarkModeClick, handleLightModeCl
                 initial={{ opacity: 0, y: 20 }}
                 transition={{ duration: duration, delay: delay }}>
                 <Text
-                    children="Software Engineer and a new IT gradute , having a strong foundation on the fundamentamentals of web development and apassion for creating user-friendly web-application"
+                    children="Software Engineer and a new IT gradute , having a strong foundation on the fundamentals of web development and apassion for creating user-friendly web-application"
                     className="o-banner-bottom__lower-text"
                 />
             </motion.div>

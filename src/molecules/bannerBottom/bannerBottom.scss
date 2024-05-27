@@ -10,6 +10,10 @@
     flex-direction: column;
     align-items: center;
 
+    @include breakpoint("sm") {
+        top: 92%;
+    }
+
     &__upper-text {
         font-size: 3rem;
         font-weight: 800;
