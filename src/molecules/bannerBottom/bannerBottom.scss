@@ -11,7 +11,7 @@
     align-items: center;
 
     @include breakpoint("sm") {
-        top: 92%;
+        top: 88%;
     }
 
     &__upper-text {
@@ -139,9 +139,9 @@
         bottom: 8%;
         z-index: 999999;
 
-        @include breakpoint("sm") {
-            right: 15%;
-        }
+        // @include breakpoint("sm") {
+        //     right: 15%;
+        // }
 
 
         .svg-inline--fa {
