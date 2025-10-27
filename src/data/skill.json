@@ -1,54 +1,83 @@
 [
-    {
-        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
-        "text": "HTML"
-    },
-    {
-        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
-        "text": "CSS"
-    },
-    {
-        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-        "text": "JavaScript"
-    },
-    {
-        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-        "text": "ReactJS"
-    },
-    {
-        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
-        "text": "NodeJS"
-    },
-    {
-        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
-        "text": "ExpressJS"
-    },
-    {
-        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
-        "text": "TypeScript"
-    },
-    {
-        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
-        "text": "Sass"
-    },
-    {
-        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
-        "text": "MongoDB"
-    },
-    {
-        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
-        "text": "MySql"
-    },
-    {
-        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-        "text": "Tailwind css"
-    },
-    {
-        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
-        "text": "Bootstrap"
-    },
-    {
-        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
-        "text": "Git"
-    }
+  {
+    "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+    "text": "HTML"
+  },
+  {
+    "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+    "text": "CSS"
+  },
+  {
+    "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+    "text": "JavaScript"
+  },
+  {
+    "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+    "text": "ReactJS"
+  },
+  {
+    "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+    "text": "NextJS"
+  },
+  {
+    "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
+    "text": "NodeJS"
+  },
+  {
+    "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+    "text": "ExpressJS"
+  },
+  {
+    "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+    "text": "TypeScript"
+  },
+  {
+    "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
+    "text": "Sass"
+  },
+  {
+    "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+    "text": "Tailwind css"
+  },
+  {
+    "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+    "text": "MongoDB"
+  },
+  {
+    "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
+    "text": "MySql"
+  },
+  {
+    "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+    "text": "PostgreSQL"
+  },
+
+  {
+    "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
+    "text": "Bootstrap"
+  },
+  {
+    "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+    "text": "Git"
+  },
+  {
+    "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg",
+    "text": "Socket.io"
+  },
+  {
+    "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg",
+    "text": "Redis"
+  },
+  {
+    "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rabbitmq/rabbitmq-original.svg",
+    "text": "RabbitMq"
+  },
+  {
+    "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
+    "text": "RTK Query"
+  },
+  {
+    "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/slack/slack-original.svg",
+    "text": "Slack/Bolt"
+  }
 ]

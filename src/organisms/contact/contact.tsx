@@ -7,69 +7,84 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
 const Contact = () => {
-    const [name, setName] = useState<string>('');
-    const [email, setEmail] = useState<string>('');
-    const [message, setMessage] = useState<string>('');
-    const delay = 0.5;
-    const duration = 1.8;
+  const [name, setName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [message, setMessage] = useState<string>("");
+  const delay = 0.5;
+  const duration = 1.8;
 
-    const handleSubmit = (e?: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-        if (e)
-            e.preventDefault()
-        setName("");
-        setEmail("");
-        setMessage("");
-
-    }
-    return (
-        <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: duration, delay: delay }}
-            viewport={{ once: true }}
-            className="o-contact" id="o-contact__id" >
-            <Text children="Contact" className="o-experience__heading" />
-            <div className="o-contact__container">
-                <div className="o-contact__form">
-                    <form>
-                        <div>
-                            <Text children="Your Name" className="o-contact__formText" />
-                            <div>
-                                <Input type="text" value={name}
-                                    onChange={setName} isRequired />
-                            </div>
-                        </div>
-                        <div>
-                            <Text children="Your Email" className="o-contact__formText" />
-                            <div>
-                                <Input type="email" value={email}
-                                    onChange={setEmail} isRequired />
-                            </div>
-                        </div>
-                        <div>
-                            <Text children="Your Message" className="o-contact__formText" />
-                            <div>
-                                <Input type="text" value={message}
-                                    onChange={setMessage} isRequired />
-                            </div>
-                        </div>
-                        <Button type="submit" className="o-contact__button" onClick={(e: React.MouseEvent<HTMLButtonElement>) => handleSubmit(e)} children="Submit" />
-                    </form>
-                </div>
-                <div className="o-contact__info">
-                    <div className="o-contact__content">
-                        <FontAwesomeIcon icon={faEnvelope} />
-                        <Text children="rabitaamin015@gmail.com" />
-                    </div>
-                    <div className="o-contact__content">
-                        <FontAwesomeIcon icon={faLocationDot} />
-                        <Text children="Dhaka, Bangladesh" />
-
-                    </div>
-                </div>
+  const handleSubmit = (
+    e?: React.MouseEvent<HTMLButtonElement, MouseEvent>
+  ) => {
+    if (e) e.preventDefault();
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: duration, delay: delay }}
+      viewport={{ once: true }}
+      className="o-contact"
+      id="o-contact__id"
+    >
+      <Text children="Contact" className="o-experience__heading" />
+      <div className="o-contact__container">
+        <div className="o-contact__form">
+          <form>
+            <div>
+              <Text children="Your Name" className="o-contact__formText" />
+              <div>
+                <Input type="text" value={name} onChange={setName} isRequired />
+              </div>
             </div>
-        </motion.div >
-    )
-}
+            <div>
+              <Text children="Your Email" className="o-contact__formText" />
+              <div>
+                <Input
+                  type="email"
+                  value={email}
+                  onChange={setEmail}
+                  isRequired
+                />
+              </div>
+            </div>
+            <div>
+              <Text children="Your Message" className="o-contact__formText" />
+              <div>
+                <Input
+                  type="text"
+                  value={message}
+                  onChange={setMessage}
+                  isRequired
+                />
+              </div>
+            </div>
+            <Button
+              type="submit"
+              className="o-contact__button"
+              onClick={(e: React.MouseEvent<HTMLButtonElement>) =>
+                handleSubmit(e)
+              }
+              children="Submit"
+            />
+          </form>
+        </div>
+        <div className="o-contact__info">
+          <div className="o-contact__content">
+            <FontAwesomeIcon icon={faEnvelope} />
+            <Text children="rabitaamin26@gmail.com" />
+          </div>
+          <div className="o-contact__content">
+            <FontAwesomeIcon icon={faLocationDot} />
+            <Text children="Dhaka, Bangladesh" />
+          </div>
+        </div>
+      </div>
+    </motion.div>
+  );
+};
 
-export default Contact
+export default Contact;

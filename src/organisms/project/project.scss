@@ -1,73 +1,82 @@
 @import "../../styles/index.scss";
 
 .o-project {
-    margin-top: 3rem;
+  margin-top: 3rem;
 
-    &__container {
-        column-gap: 2rem;
-        margin: 5%;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-top: 4rem;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 5%;
+    margin-top: 4rem;
+    overflow: hidden; // prevent content overflow inside grid
+    word-wrap: break-word; // prevent long text overflow
 
-        @include breakpoint("md") {
-
-            row-gap: 2rem;
-        }
+    @include breakpoint("md") {
+      grid-template-columns: 1fr;
     }
 
-    &__content {
-        border: 5px solid var(--textColor);
-        border-radius: 0 1rem;
-        padding: 1.5rem 1rem;
-        flex-basis: 27%;
-        margin-bottom: 1.5rem;
-        cursor: pointer;
-        background-color: var(--projectBackground);
-        box-shadow: var(--skillShadow) 0px 0px 12px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+    @include breakpoint("sm") {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
 
-        @include breakpoint("md") {
-            flex-basis: 100%;
-        }
+  &__content {
+    border: 5px solid var(--textColor);
+    border-radius: 0 1rem;
+    padding: 1.5rem 1rem;
+    flex-basis: 27%;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    background-color: var(--projectBackground);
+    box-shadow: var(--skillShadow) 0px 0px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    overflow-y: scroll;
+    box-sizing: content-box;
 
-        @include breakpoint("sm") {
-            flex-basis: 100%;
-        }
+    @include breakpoint("md") {
+      flex-basis: 100%;
     }
 
-    &__subHeader {
-        font-size: 22px;
-        font-weight: 400;
-        color: var(--hamBurgerMenu-white);
-
+    @include breakpoint("sm") {
+      flex-basis: 100%;
     }
+  }
 
-    &__text {
-        margin-bottom: 8px;
-        font-size: 22px;
-        font-weight: 700;
-        color: var(--hamBurgerMenu-white);
-    }
+  &__subHeader {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--hamBurgerMenu-white);
+  }
 
-    &__contentText {
-        display: flex;
-        justify-content: space-between;
-        font-size: 16px;
-        font-weight: 400;
-        color: var(--hamBurgerMenu-white);
+  &__text {
+    margin-bottom: 8px;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--hamBurgerMenu-white);
+  }
 
-    }
+  &__contentText {
+    display: flex;
+    flex-wrap: wrap; /* allows wrapping to new lines */
+    gap: 0.5rem; /* space between items */
+    width: 100%; /* inherit parent width */
+    // overflow: hidden; /* prevent overflow */
+  }
 
-    &__contentTextBottom {
-        display: flex;
-        justify-content: space-between;
-        font-size: 16px;
-        font-weight: 400;
-        color: var(--hamBurgerMenu-white);
+  &__contentText > * {
+    flex-shrink: 0; /* prevents items from shrinking too much */
+    word-wrap: break-word; /* prevents long words from breaking layout */
+  }
 
-    }
+  &__contentTextBottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--hamBurgerMenu-white);
+  }
 }
